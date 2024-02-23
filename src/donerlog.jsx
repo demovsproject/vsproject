@@ -35,7 +35,7 @@ try{
 
     if (res.status >= 200 && res.status < 300) {
         alert("login success")
-        hp("/")
+        hp("/ddonate")
     } else if (res.status >= 400){
         alert("User Not Found or Wrong Password ")
     }else{

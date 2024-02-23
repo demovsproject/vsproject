@@ -23,16 +23,11 @@ function Navbarr() {
               <Link to="/relog">Login</Link>
 
             </NavDropdown>
-            <NavDropdown className="link" title="Services" id="basic-nav-dropdown">
-              <Link to="/blood">Blood Donation</Link><br></br>
-
-                <Link to="/organ">Organs</Link><br></br>
-              
-            </NavDropdown>
+            
             <Link to="/ngolog" className="link">NGO Login</Link>
 
-            <Link to="/" className="link">Contact Us</Link>
-            <Link to="/" className="link">About NGO</Link>
+            <Link to="/contact" className="link">Contact Us</Link>
+            <Link to="/about" className="link">About NGO</Link>
           </ul>
 
         </nav>

@@ -13,7 +13,7 @@ function App() {
         <header className="header">
           <div className="content">
             <h1><span>A dose of kindness,a prescription for </span><br />Change.</h1>
-            <Button className="btn ">About Us</Button>
+           <a href="mailto:batchamanic960@gmail.com" target="_blank"> <Button className="btn ">About Us</Button></a>
           </div>
           <div className="image">
             <span className="image__bg"></span>

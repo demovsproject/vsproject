@@ -16,10 +16,16 @@ import Rereg from './rereg.jsx';
 import Ngolog from './ngo.jsx';
 import Blood from './Blood.jsx';
 import Organs from './Organs.jsx';
+import DonarSelect from './donarselect.jsx';
+import ContactUs from './ContactUs.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>
+  },
+  {
+    path: "/contact",
+    element: <ContactUs/>
   },
   {
     path: "donerlog",
@@ -32,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "relog",
     element: <Relog/>,
+  },
+  {
+    path: "ddonate",
+    element: <DonarSelect/>,
   },
   {
     path: "rereg",
