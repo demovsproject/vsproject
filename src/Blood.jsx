@@ -24,56 +24,56 @@ function Blood() {
       </div>
       <div className='bg2'>
       <Card style={{ width: '10rem', height: "10rem", alignItems: "center" }}>
-          <Link to="/">
+          <Link to="/details">
             <Card.Img variant="top" src={bl8} />
           </Link>
           <Card.Body>
           </Card.Body>
         </Card>
         <Card style={{ width: '10rem', height: "10rem", alignItems: "center" }}>
-          <Link to="/">
+          <Link to="/details">
             <Card.Img variant="top" src={bl1} />
           </Link>
           <Card.Body>
           </Card.Body>
         </Card>
         <Card style={{ width: '10rem', height: "10rem", alignItems: "center" }}>
-          <Link to="/">
+          <Link to="/details">
             <Card.Img variant="top" src={bl6} />
           </Link>
           <Card.Body>
           </Card.Body>
         </Card>
         <Card style={{ width: '10rem', height: "10rem", alignItems: "center" }}>
-          <Link to="/">
+          <Link to="/details">
             <Card.Img variant="top" src={b} />
           </Link>
           <Card.Body>
           </Card.Body>
         </Card>
         <Card style={{ width: '10rem', height: "10rem", alignItems: "center" }}>
-          <Link to="/">
+          <Link to="/details">
             <Card.Img variant="top" src={bl2} />
           </Link>
           <Card.Body>
           </Card.Body>
         </Card>
         <Card style={{ width: '10rem', height: "10rem", alignItems: "center" }}>
-          <Link to="/">
+          <Link to="/details">
           </Link>
             <Card.Img variant="top" src={bl3} />
           <Card.Body>
           </Card.Body>
         </Card>
         <Card style={{ width: '10rem', height: "10rem", alignItems: "center" }}>
-          <Link to="/">
+          <Link to="/details">
             <Card.Img variant="top" src={bl4} />
           </Link>
           <Card.Body>
           </Card.Body>
         </Card>
         <Card style={{ width: '10rem', height: "10rem", alignItems: "center" }}>
-          <Link to="/">
+          <Link to="/details">
             <Card.Img variant="top" src={bl5} />
           </Link>
           <Card.Body>
