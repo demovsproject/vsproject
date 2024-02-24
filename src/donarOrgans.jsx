@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-function DetailsForm() {
+function DonarOrgans() {
     const [formData, setFormData] = useState({
         userName: '',
         gender: '',
@@ -14,8 +14,7 @@ function DetailsForm() {
         state: '',
         zip: '',
         country: '',
-        bloodGroup: '',
-        bloodQuantity: '',
+        organDonate: '',
         adhar: ''
       });
       
@@ -32,7 +31,7 @@ function DetailsForm() {
         console.log(formData);
         try {
           const res = await axios({
-            url: 'http://localhost:7007/user/blood-donate',
+            url: 'http://localhost:7007/user/organ-donate',
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -106,10 +105,12 @@ function DetailsForm() {
           <option value="AB+">AB+</option>
           <option value="AB-">AB-</option>
         </Form.Select>
-        <Form.Group className="mb-3">
-          <Form.Label>Units of blood:</Form.Label>
-          <Form.Control type='number' placeholder='Quantity' name='bloodQuantity' value={formData.bloodQuantity} onChange={handleChange} />
-        </Form.Group>
+        <Form.Select name='organDonate' className='mb-3' value={formData.organDonate} onChange={handleChange}>
+          <option>Select the Organs</option>
+          <option value="heart">Heart</option>
+          <option value="eye">Eye</option>
+          <option value="lungs">Lungs</option>
+        </Form.Select>
         <Form.Group className="mb-3">
           <Form.Label>Adhar Number:</Form.Label>
           <Form.Control type='file' id='adhar' value={formData.adhar} name="adhar" onChange={handleChange} />
@@ -122,4 +123,4 @@ function DetailsForm() {
   );
 }
 
-export default DetailsForm;
+export default DonarOrgans;

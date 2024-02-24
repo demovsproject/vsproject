@@ -19,6 +19,7 @@ import Organs from './Organs.jsx';
 import DonarSelect from './donarselect.jsx';
 import ContactUs from './ContactUs.jsx';
 import DetailsForm from './DetailsForm.jsx';
+import DonarOrgans from './donarOrgans.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactUs/>
+  },
+  {
+    path: "/organ-donate",
+    element: <DonarOrgans/>
   },
   {
     path: "/Details",
