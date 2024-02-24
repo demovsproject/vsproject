@@ -14,7 +14,8 @@ function DonarOrgans() {
         state: '',
         zip: '',
         country: '',
-        organDonate: '',
+        bloodGroup:'',
+        donateOrgan: '',
         adhar: ''
       });
       
@@ -61,6 +62,7 @@ function DonarOrgans() {
         <Form.Group className="mb-3">
           <Form.Label>Gender:</Form.Label>
           <Form.Select name='gender' value={formData.gender} onChange={handleChange}>
+          <option>Select the Gender</option>
             <option>Male</option>
             <option>Female</option>
             <option>Others</option>
@@ -105,7 +107,7 @@ function DonarOrgans() {
           <option value="AB+">AB+</option>
           <option value="AB-">AB-</option>
         </Form.Select>
-        <Form.Select name='organDonate' className='mb-3' value={formData.organDonate} onChange={handleChange}>
+        <Form.Select name='donateOrgan' className='mb-3' value={formData.donateOrgan} onChange={handleChange}>
           <option>Select the Organs</option>
           <option value="heart">Heart</option>
           <option value="eye">Eye</option>

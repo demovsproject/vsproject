@@ -12,7 +12,7 @@ function DonarSelect() {
     <div style={{display:"flex",backgroundColor:"#f1ffff",justifyContent:"center",alignItems:"center",height:"100vh",gap:"40px"}}>
 <h4>blood &#8811;</h4>
           <Card style={{ width: '18rem', height: "18rem", alignItems: "center" }}>
-          <Link to="/blood">
+          <Link to="/blood-donate">
             <Card.Img variant="top" src={bdonate} />
           </Link>
           <Card.Body>
@@ -21,7 +21,7 @@ function DonarSelect() {
    
    <h4>Organs &#8811;</h4>
         <Card style={{ width: '18rem', height: "18rem", alignItems: "center" }}>
-          <Link to="/organ">
+          <Link to="/organ-donate">
             <Card.Img variant="top" src={odonate} />
           </Link>
           <Card.Body>

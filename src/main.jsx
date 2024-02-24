@@ -14,12 +14,13 @@ import Donerlog from './donerlog.jsx';
 import Relog from './relog.jsx';
 import Rereg from './rereg.jsx';
 import Ngolog from './ngo.jsx';
-import Blood from './Blood.jsx';
 import Organs from './Organs.jsx';
 import DonarSelect from './donarselect.jsx';
 import ContactUs from './ContactUs.jsx';
 import DetailsForm from './DetailsForm.jsx';
 import DonarOrgans from './donarOrgans.jsx';
+import Chalan from './Chalan.jsx';
+import DonatedList from './DonatedList.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,15 +35,23 @@ const router = createBrowserRouter([
     element: <DonarOrgans/>
   },
   {
-    path: "/Details",
+    path: "/blood-donate",
     element: <DetailsForm/>
   },
   {
-    path: "donerlog",
+    path: "/receipt",
+    element: <Chalan/>,
+  },
+  {
+    path: "/donationlists",
+    element: <DonatedList/>,
+  },
+  {
+    path: "/donerlog",
     element: <Donerlog/>,
   },
   {
-    path: "ngolog",
+    path: "/ngolog",
     element: <Ngolog/>,
   },
   {
@@ -50,33 +59,26 @@ const router = createBrowserRouter([
     element: <Relog/>,
   },
   {
-    path: "ddonate",
+    path: "/ddonate",
     element: <DonarSelect/>,
   },
   {
-    path: "rereg",
+    path: "/rereg",
     element: <Rereg/>,
   },
 
   {
-    path: "about",
+    path: "/about",
     element: <Aboutus/>,
   },
   {
-    path: "donerreg",
+    path: "/donerreg",
     element: <Donerreg/>,
   }
-  ,
-  {
-    path: "organ",
-    element: <Organs/>,
-  },
+,
   {
     path:"service",
     element:<Services/>
-  },{
-    path:"blood",
-    element:<Blood/>
   }
 ]);
 

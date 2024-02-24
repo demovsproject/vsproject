@@ -12,7 +12,7 @@ function Organs() {
     <Navbarr/>
     <div className='orgcard'>
        <Card style={{ width: '18rem',alignItems:"center" }}>
-       <Link>
+       <Link to="/organ-donate">
          <Card.Img variant="top" src={org1} />
         </Link>
         <Card.Body>
@@ -21,7 +21,7 @@ function Organs() {
         </Card.Body>
       </Card>
       <Card style={{ width: '18rem',alignItems:"center" }}>
-       <Link>
+       <Link to="/organ-donate">
          <Card.Img variant="top" src={org2} />
         </Link>
         <Card.Body>

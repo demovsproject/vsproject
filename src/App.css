@@ -16,22 +16,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-.bg1{
-  grid-area:bg1;
-}
-.bg1{
-  display:grid;
-  grid-template-columns:minmax(400px);
-}
-.bg2{
-  grid-area:bg2;
 
 
-}
+
 .bg2{
-  display:grid;
-  grid-template-rows:1fr 1fr 1fr;
-  grid-template-columns:repeat(3,1fr);
+ 
+  display:flex;
+justify-content:center;
+align-items:center; 
 }
 .card{
   overflow:hidden;
@@ -168,7 +160,10 @@ nav {
   border-radius: 50%;
   z-index: -1;
 }
+.donarcard p{
+  font-weight:900; 
 
+}
 .image img {
   border-radius:50%;
   height:450px;
