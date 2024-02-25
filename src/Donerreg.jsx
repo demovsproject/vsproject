@@ -28,7 +28,7 @@ function Donerreg() {
         try {
             const res = await axios(
                 {
-                    url: 'http://localhost:7007/user/donarreg',
+                    url: 'https://medical-donation-backend.vercel.app/user/donarreg',
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

@@ -34,7 +34,7 @@ function DonarOrgans() {
         console.log(formData);
         try {
           const res = await axios({
-            url: 'http://localhost:7007/user/organ-donate',
+            url: 'https://medical-donation-backend.vercel.app/user/organ-donate',
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -23,7 +23,7 @@ function Ngolog() {
         console.log("password:", formData.password);
         try {
             const res = await axios.post(
-                'http://localhost:7007/user/ngolog',
+                'https://medical-donation-backend.vercel.app/user/ngolog',
                 formData, 
                 {
                     headers: {

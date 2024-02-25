@@ -25,7 +25,7 @@ function reLog() {
 try{
     const res = await axios(
         {
-            url: 'http://localhost:7007/user/customerlog',
+            url: 'https://medical-donation-backend.vercel.app/user/customerlog',
             method: 'POST',
             mode: 'no-cors',
             headers: {

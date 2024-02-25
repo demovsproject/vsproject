@@ -24,7 +24,7 @@ function Donerlog() {
 try{
     const res = await axios(
         {
-            url: 'http://localhost:7007/user/donarlog',
+            url: 'https://medical-donation-backend.vercel.app/user/donarlog',
             method: 'POST',
             mode: 'no-cors',
             headers: {
