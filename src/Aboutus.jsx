@@ -1,12 +1,14 @@
 import React from 'react'
 import about from "./New folder/donar.png"
+import Navbarr from './Navbarr'
 function Aboutus() {
   return (
     <div>
        <div >
   
-  <body>
+  <>
     <div className="container">
+      <Navbarr/>
       <header className="header">
         <div className="content">
           <h1><span>About Us</span><br /></h1>
@@ -23,7 +25,7 @@ function Aboutus() {
     <footer>
       <p>&copy; 2024 MVV NGO. All rights reserved.</p>
     </footer>
-  </body>
+  </>
 </div>
 
     </div>

@@ -160,9 +160,14 @@ nav {
   border-radius: 50%;
   z-index: -1;
 }
-.donarcard p{
-  font-weight:900; 
+.donorcd1{
+  font-weight : 800; 
+  letter-spacing:2px;
 
+
+}
+.donorcd2{
+  color:grey
 }
 .image img {
   border-radius:50%;

@@ -1,62 +1,46 @@
-import axios from 'axios';
-import { useState,useEffect } from 'react';
-import { Button, Container } from 'react-bootstrap';
-import Table from 'react-bootstrap/Table';
+import React, { useState, useEffect, useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { Container, Table } from 'react-bootstrap';
 import DonatedList1 from './DonatedList1';
-import { Link, Navigate } from 'react-router-dom';
+import { MongoDBContext } from './useContext';
 
 function DonatedList() {
-    const hp = Navigate
-    const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-
-const onClicked = ()=>{
-const con =  confirm("Donar Will contact You Soon")
-}
-  const fetchData = async () => {
-    try {
-      const response = await axios.get('http://localhost:7007/user/donate-lists');
-      setData(response.data);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
-  return (
-    <Container className='mt-5 bg-dark text-white'>
-    <h1>Blood Available : </h1>
-    <Table style={{textAlign:"center"}}>
-      <thead>
-        <tr>
-            <th>Donar Name</th>
-            <th>BloodGroup</th>
-            <th>Sex</th>
-            <th>email</th>
-          <th>For Need</th>
-        </tr>
-      </thead>
-      <tbody>
-          {data.map((data , index)=>(
-        <tr key={index}>
-
-                <td>{data.userName}</td>
-         <td>{data.bloodGroup}</td>
-         <td>{data.gender}</td> 
-         <td>{data.email}</td>
-         <td><Link to="" onClick={onClicked} style={{textDecoration:"none"}}>Click</Link></td>    
-      
-        </tr>
-            )
-            )}
-        
-      </tbody>
-    </Table>
-    <DonatedList1/>
-    </Container>
-  );
+const mongoDBData = useContext(MongoDBContext)
+    return (
+        <Container className='mt-5 bg-dark text-white'>
+            <h1>Blood Available:</h1>
+            <Table style={{ textAlign: "center" }}>
+                <thead>
+                    <tr>
+                        <th>Donor Name</th>
+                        <th>Blood Group</th>
+                        <th>Sex</th>
+                        <th>Email</th>
+                        <th>For Need</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {mongoDBData.length > 0 ? (
+                        mongoDBData.map((item, index) => (
+                            <tr key={index}>
+                                <td>{item.userName}</td>
+                                <td>{item.bloodGroup}</td>
+                                <td>{item.gender}</td>
+                                <td>{item.email}</td>
+                                {/* Link to navigate to the Chalan page and pass the entire item as state */}
+                                <td><Link  to={`/receipt/${item._id}`}  style={{ textDecoration: "none" }}>Click</Link></td>
+                            </tr>
+                        ))
+                    ) : (
+                        <tr>
+                            <td colSpan="5">No data available</td>
+                        </tr>
+                    )}
+                </tbody>
+            </Table>
+            <DonatedList1 />
+        </Container>
+    );
 }
 
 export default DonatedList;

@@ -2,7 +2,9 @@ import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 function DetailsForm() {
+    const hp = useNavigate()
     const [formData, setFormData] = useState({
         userName: '',
         gender: '',
@@ -40,9 +42,12 @@ function DetailsForm() {
             data: formData
         });
         if (res.status >= 200 && res.status < 300) {
-            alert("Data Saved");
-        } else {
-            console.log("error in saving data");
+            alert("You Details Will be Shared.");
+            hp("/ddonate")
+        } else if(res.status > 300 && res.status < 502) {
+            alert("Fill the Form Correctly")
+        } else{
+            console.log("internal err");
         }
 
     }

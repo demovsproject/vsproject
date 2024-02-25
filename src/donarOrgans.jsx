@@ -2,7 +2,9 @@ import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 function DonarOrgans() {
+    const hp = useNavigate()
     const [formData, setFormData] = useState({
         userName: '',
         gender: '',
@@ -40,7 +42,8 @@ function DonarOrgans() {
             data: formData
         });
         if (res.status >= 200 && res.status < 300) {
-            alert("Data Saved");
+            alert("your data will be shared");
+            hp("/ddonate")
         } else {
             console.log("error in saving data");
         }
