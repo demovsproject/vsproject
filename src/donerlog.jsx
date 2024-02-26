@@ -36,17 +36,15 @@ try{
     if (res.status >= 200 && res.status < 300) {
         alert("login success")
         hp("/ddonate")
-    } else if (res.status >= 400){
-        alert("User Not Found or Wrong Password ")
     }else{
-        alert("login error")
+        alert("check your password and email")
     }
 
 
 
-}catch{err => {
-    console.log("err in log req",err);
-}}
+}catch(err) {
+    alert(`check your password and email ,${err} `)
+}
        
     }
 
@@ -54,7 +52,7 @@ try{
 
         <div className='donerreg'>
             <Form onSubmit={handleSubmit}>
-            <h1>Donar Login</h1>
+            <h1>Donor Login</h1>
             <Form.Group className="mb-3" >
                 <Form.Label>Email address</Form.Label>
                 <Form.Control type="Email" name='Email' value={formData.Email} onChange={handleClick} placeholder="Enter Email" />

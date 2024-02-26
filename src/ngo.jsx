@@ -39,7 +39,7 @@ function Ngolog() {
                 alert("login error")
             }
         } catch (err) {
-            console.error("Error in log req", err);
+            alert(`check your ngoid and password ,${err} `)
         }
     }
 

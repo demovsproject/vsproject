@@ -11,13 +11,13 @@ function Navbarr() {
           <div className="nav__logo">MVV NGO</div>
           <ul className="nav__links">
             <Link to="/" className="link">Home</Link>
-            <NavDropdown className="link" title="Donar" id="basic-nav-dropdown">
+            <NavDropdown className="link" title="Donor" id="basic-nav-dropdown">
               <Link to="/donerreg"> Registration</Link><br></br>
 
               <Link to="/donerlog"> Login</Link>
 
             </NavDropdown>
-            <NavDropdown className="link" title="Customer" id="basic-nav-dropdown">
+            <NavDropdown className="link" title="Recipient" id="basic-nav-dropdown">
               <Link to="/rereg">Registration</Link><br></br>
 
               <Link to="/relog">Login</Link>

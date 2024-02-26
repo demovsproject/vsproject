@@ -44,7 +44,7 @@ function reReg() {
 
         }
         catch (err) {
-            console.error("catch error", err);
+            alert(`check your network submit again ,${err} `)
         }
     }
 

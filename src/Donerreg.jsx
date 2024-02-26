@@ -39,12 +39,12 @@ function Donerreg() {
                 alert("Register Successfull");
                 hp("/donerlog")
             } else {
-                console.log("error in saving data");
+                alert("register error")
             }
 
         }
         catch (err) {
-            console.error("catch error", err);
+            alert(`register error ,${err} `)
         }
     }
 
@@ -52,7 +52,7 @@ function Donerreg() {
 
         <div className='donerreg'>
             <Form onSubmit={handleSubmit}>
-                <h1>Donar Registration</h1>
+                <h1>Donor Registration</h1>
                 <Form.Group className="mb-3"  >
                     <Form.Label>Enter Your Name</Form.Label>
                     <Form.Control type="text" value={formData.userName} name='userName' onChange={handleClick} placeholder="Enter your name" />

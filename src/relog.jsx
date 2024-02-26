@@ -45,9 +45,9 @@ try{
 
 
 
-}catch{err => {
-    console.log("err in log req",err);
-}}
+}catch(err) {
+    alert(`check your password and email ,${err} `)
+}
        
     }
 
