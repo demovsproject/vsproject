@@ -67,7 +67,8 @@ function DetailsForm() {
         <Form.Group className="mb-3">
           <Form.Label>Gender:</Form.Label>
           <Form.Select name='gender' value={formData.gender} onChange={handleChange}>
-            <option>Male</option>
+           <option>select the gender</option>
+              <option>Male</option>
             <option>Female</option>
             <option>Others</option>
           </Form.Select>
