@@ -41,7 +41,7 @@ const screenshotRef = useRef(null);
                     <span className='donorcd1'>Donation_id : </span>
                     <span className='donorcd2' > {`${item.userName}` + id}</span><br/>
                     <span className='donorcd1'>Name:  </span><span className='donorcd2'>{item.userName}</span><br/> 
-                    <span className='donorcd1'>Gender: </span><span className='donorcd2'>{item.phoneNumber}</span><br/>
+                    <span className='donorcd1'>Number: </span><span className='donorcd2'>{item.phoneNumber}</span><br/>
                     <span className='donorcd1'>Email: </span><span className='donorcd2'>{item.email}</span><br/>
                     <span className='donorcd1'>Gender: </span><span className='donorcd2'>{item.gender}</span><br/>
                     <span className='donorcd1'>Address: </span><span className='donorcd2'>{`${item.zip},${item.street},${item.city},${item.country}`}</span><br/>
