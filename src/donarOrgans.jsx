@@ -117,7 +117,7 @@ function DonarOrgans() {
           <option value="lungs">Lungs</option>
         </Form.Select>
         <Form.Group className="mb-3">
-          <Form.Label>Adhar Number:</Form.Label>
+          <Form.Label>Prescription:</Form.Label>
           <Form.Control type='file' id='adhar' value={formData.adhar} name="adhar" onChange={handleChange} />
         </Form.Group>
         <Button style={{ width: '100%', marginTop: '10px' }} variant="primary" type="submit">
