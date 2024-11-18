@@ -21,6 +21,7 @@ function ContactUs() {
           </a><br></br>
           <a style={{textDecoration:"none",color:"grey",fontSize:"30px",fontWeight:"400"}} href='mailto:vickstft@gmail.com'>
                Mr.Vignesh.
+            Mr.Jayachandran
           </a>
 
         </div>
