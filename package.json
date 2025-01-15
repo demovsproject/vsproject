@@ -2,7 +2,7 @@
   "name": "expo",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Rubyy007.github.io/medical-donation",
+  "homepage": "",
   "type": "module",
   "scripts": {
     "dev": "vite",
