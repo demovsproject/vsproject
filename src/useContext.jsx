@@ -12,7 +12,7 @@ const MongoDBProvider = ({ children }) => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://medical-donation-backend.vercel.app/user/donate-lists');
+      const response = await axios.get('https://demovsproject-backend.vercel.app/user/donate-lists');
       setMongoDBData(response.data);
     } catch (error) {
       console.error('Error fetching MongoDB data:', error);
